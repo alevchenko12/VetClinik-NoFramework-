@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок - VetClinik</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to CSS -->
+
+    <style>
+        .form-group textarea {
+        resize: none;
+        height: 100px; 
+        width: 400px;
+        max-width: 100%;
+        overflow: auto; 
+    }</style>
+
+</head>
+
+<body>
+    <header>
+        <h1>VetClinik - Зворотній зв'язок</h1>
+        <img src="img/logo.png" alt="Логотип VetClinik">
+    </header>
+    
+    <main>
+        <a href="index.html" class="back-button">Перейти на Головну сторінку</a>
+        <h2>Форма зворотнього зв’язку</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Прізвище та ім’я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pet">Чи є домашній улюбленець:</label>
+                <select id="pet" name="pet">
+                    <option value="multiple">Так - один</option>
+                    <option value="single">Так - декілька</option>
+                    <option value="none">Ні</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="reason">Мета зворотнього зв’язку:</label>
+                <select id="reason" name="reason">
+                    <option value="collaboration">Співпраця</option>
+                    <option value="complaint">Скарга на якість послуги</option>
+                    <option value="suggestion">Пропозиція</option>
+                    <option value="error">Наявність помилки на сайті</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="details">Детально:</label>
+                <textarea id="details" name="details" maxlength="500" placeholder="Введіть детальну інформацію тут..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Я погоджуюсь на обробку моїх даних.</label>
+            </div>
+</body>
+</html>
+
+            <div class="form-group">
+                <button type="submit">Відправити</button>
+            </div>
+        </form>       
+    </main>
+
+</body>
+</html>

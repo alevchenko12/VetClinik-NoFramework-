@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Зворотній зв'язок - VetClinik</title>
-    <link rel="stylesheet" href="css/main.css"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/contact.css"> <!-- Link to CSS -->
 
     <style>
         .form-group textarea {
@@ -55,11 +55,11 @@
             <div class="form-group">
                 <label for="details">Детально:</label>
                 <textarea id="details" name="details" maxlength="500" placeholder="Введіть детальну інформацію тут..."></textarea>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="consent" name="consent" required>
+            </div>            
+            <div class="form-group checkbox-group">
                 <label for="consent">Я погоджуюсь на обробку моїх даних.</label>
-            </div>
+                <input type="checkbox" id="consent" name="consent" required>
+            </div>            
 </body>
 </html>
 

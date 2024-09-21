@@ -1,0 +1,96 @@
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa); /* Gradient background */
+}
+
+/* Header styles: Fixed at the top */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4b79a1; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header img {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    height: 50px;
+}
+
+/* Main content padding to avoid overlap with the fixed header */
+main {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main h2{
+    text-shadow: 2px 2px 5px gray;
+}
+
+/* Back button */
+.back-button {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Georgia', serif; 
+}
+
+/* Services list grid layout */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Service item styling */
+.service-item {
+    border: 2px solid darkblue; 
+    border-top: 2px solid darkblue; /* Solid top border */
+    border-right: 2px dotted darkblue;
+    border-bottom: 2px dotted darkblue;
+    border-left: 2px dotted darkblue;
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for each service item */
+    transition: transform 0.3s ease;
+    text-align: center; 
+}
+
+/* Image hover effect: Invert to negative */
+.service-item img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: filter 0.3s ease; 
+}
+
+.service-item img:hover {
+    filter: invert(1); /* Negative effect on hover */
+}
+
+/* Price styling: Bold, italic, and larger */
+.service-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}

@@ -4,7 +4,7 @@ const header = document.querySelector('header');
 // Функція для створення та анімації сніжинок
 function createSnowflake() {
     const snowflake = document.createElement('div'); // Створення елемента сніжинки
-    snowflake.innerHTML = '❄️'; // Символ сніжинки (можна також використовувати зображення)
+    snowflake.innerHTML = '❄️'; // Символ сніжинки 
     snowflake.style.position = 'absolute';
     snowflake.style.color = '#FFF';
     
